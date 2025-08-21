@@ -1,38 +1,46 @@
 import React from "react";
-
+import { CiBellOn } from "react-icons/ci";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import FooterMenu from "../components/footerMenu";
+import InfomationBox from "../components/infomationBox.jsx";
+import '../styling/Dogs.scss';
+import vite from '../../public/vite.svg';
 function Dogs() {
     return (
         <>
             <div className="dogs">
 
-                <div>
-                    <div>
-                        <img src="" alt="" />
-                        <p>dvdosvmspo</p>
+                <div className="top_container">
+
+                    <div className="pfp_box">
+                        <img src={vite} alt="" />
+                        <p><FaMapMarkerAlt className="icon" />noihnoh</p>
                     </div>
-                    <button>siovsj</button>
+                    <button className="notifi_btn"><CiBellOn /></button>
+
                 </div>
 
-                <div>
-                    <button>dcms</button>
-                    <button>dcms</button>
-                    <button>dcms</button>
-                    <button>dcms</button>
-                    <button>dcms</button>
+                <div className="scrollbar_btns">
+                    <button>Cats</button>
+                    <button>Dogs</button>
+                    <button>Birds</button>
+                    <button>Fishy</button>
+                    <button>HhHhHh</button>
+                    <button>Other</button>
                 </div>
+                <div className="dog_scroll">
+               <div><InfomationBox /></div>
+                  <div><InfomationBox /></div>
+                  <div><InfomationBox /></div>
+                  <div><InfomationBox /></div>
+                  <div><InfomationBox /></div>
+               </div>
 
-                <div>
-                    <div><img src="" alt="" /></div>
-                    <div>
-                        <span
-                        ><h3>species</h3>
-                            <button>heart</button>
-                        </span>
-                        <p>where its from</p>
-                        <p>Taking care of a pet is my favorite, it helps me to...</p>
-                    </div>
-                </div>
-            </div>
+            </div>{/* end of dogs */}
+
+            <footer>
+                <FooterMenu />
+            </footer>
         </>
     )
 }

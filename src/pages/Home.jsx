@@ -1,6 +1,6 @@
 import React from "react";
 import animal from '../../assets/Animal.svg'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import '../styling/Home.scss';
 
 function Home() {
@@ -14,10 +14,12 @@ function Home() {
      <p>Taking care of a pet is my favorite, it helps me</p>
      <p>to gaimr stress and fatigue.</p>
      </div>
-
+<footer>
 <div className="Skip">
-   <button className="Skip_btn"><Link className="Skip_link" to="/dogs">Skip</Link></button>
+   <button className="Skip_btn"><NavLink className="Skip_link" to="/dogs">Skip</NavLink></button>
    </div>
+
+</footer>
      </div>
         </>
     )

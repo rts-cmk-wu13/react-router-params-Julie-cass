@@ -1,7 +1,9 @@
 
 .information_box{
-
+border: none;
+background-color: none;
     padding-bottom: 2rem;
+    cursor: pointer;
 }
 .dog_info_box {
         display: grid;

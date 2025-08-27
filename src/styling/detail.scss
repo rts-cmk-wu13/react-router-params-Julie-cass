@@ -1,22 +1,100 @@
-.Back{
-    display: flex;
+.detail {
+    background-image: url('../../assets/background.svg');
+
+    .image_box img {
+        padding-top: 5rem;
+        width: 15rem;
+        height: 15rem;
+        margin-left: 5rem;
+    }
+}
+
+.paw_icon,
+.gender_icon {
+
+    text-align: center;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    box-shadow: 10px 8px 16px 0 #AAAACC;
+    margin-right: 0.5rem;
+}
+
+.species_name p,
+.gender p {
+    color: #4F4F4F;
+}
+
+.paw_icon {
+    color: #F4B207;
+}
+
+.gender_icon {
+    color: #FF8893;
+}
+
+.Back {
+
+    .content_box {
+        padding-top: 0.5rem;
+        display: block;
+        margin: 0 auto;
+
+        max-width: 18rem;
+    }
+
+    .name_place_box {
+        & h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        & p {
+            margin: 0;
+
+            color: #9E9E9E;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    .about_dog_box {
+        display: flex;
+        gap: 3rem;
+
+    }
+
+    .species_name,
+    .gender {
+        display: flex;
+        align-items: center;
+    }
+
     justify-content: center;
     align-items: center;
 
-    padding-bottom: 4rem;
-.Back_btn{
-    max-width: 18rem;
-    border-radius: 3rem;
-    border: none;
-background-color: #57419D;
-padding:0.8rem 0 0.8rem 0;
-box-shadow: 0 8px 16px 0 #AAAACC;
+    background-color: #F5F5F9;
+    border-top-left-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+    padding-bottom: 2rem;
 
-.Back_link{
 
-    text-decoration: none;
-    padding:0.8rem 9rem 0.8rem 8.5rem;
-    color: #fff;
+    .detail_txt p {
+        color: #9E9E9E;
     }
-}
+
+    .Back_btn {
+        margin-top: 1rem;
+        max-width: 18rem;
+        border-radius: 3rem;
+        border: none;
+        background-color: #57419D;
+        padding: 0.8rem 0 0.8rem 0;
+        box-shadow: 10px 8px 16px 4px #AAAACC;
+
+        .Back_link {
+
+            text-decoration: none;
+            padding: 0.8rem 9rem 0.8rem 8.5rem;
+            color: #fff;
+        }
+    }
 }

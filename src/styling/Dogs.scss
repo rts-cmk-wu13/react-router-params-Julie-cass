@@ -1,6 +1,6 @@
-@use '../components/infomationBox';
-@use '../components/footerMenu';
-@use '../components/scrollbar';
+@use '../../src/components/dogpage/infomationBox';
+@use '../../src/components/dogpage/footerMenu';
+@use '../../src/components/dogpage/scrollbar';
 
 .dogs {
 padding-bottom: 5rem;

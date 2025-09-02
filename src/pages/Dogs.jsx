@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CiBellOn } from "react-icons/ci";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 
-import FooterMenu from "../components/footerMenu";
-import InfomationBox from "../components/infomationBox.jsx";
-import ScrollbarButtons from "../components/scrollbarbtn.jsx";
+ import FooterMenu from "../components/dogpage/footerMenu.jsx";
+import InfomationBox from "../components/dogpage/infomationBox.jsx";
+import ScrollbarButtons from "../components/dogpage/scrollbarbtn.jsx";
+
 
 import '../styling/Dogs.scss';
 import vite from '../../public/vite.svg';
-function Dogs() {
-    return (
+function doglist() {
+ 
+    return(
         <>
             <div className="dogs">
 
@@ -32,13 +34,14 @@ function Dogs() {
                   <div><InfomationBox /></div>
                </div>
 
-            </div>{/* end of dogs */}
+            </div>
 
             <footer>
                 <FooterMenu />
             </footer>
         </>
     )
+    
 }
 
-export default Dogs;
+export default doglist;

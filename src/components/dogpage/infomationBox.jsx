@@ -2,7 +2,7 @@ import React from "react";
 import { FiMapPin } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import vite from "../../public/vite.svg"; // Add this import
+import vite from "../../../public/vite.svg"; // Add this import
 
 function InfomationBox() { // Capitalize the component name
     return (

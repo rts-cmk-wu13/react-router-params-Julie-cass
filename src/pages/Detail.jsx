@@ -12,7 +12,7 @@ function Detail() {
         <>
             <div className="detail">
                 <div className="image_box">
-                    <img src="../public/vite.svg" alt="place holder image" />
+                    <img src="../vite.svg" alt="place holder image" />
                 </div>
 
                 <section>
@@ -38,18 +38,16 @@ function Detail() {
                             </section>
 
                             <div className="detail_txt">
-                                <p>Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quae adipisci iure
-                                    soluta ut molestias corporis, sed nostrum
-                                    assumenda veritatis</p>
+                                <p>description</p>
                             </div>
                             <button className="Back_btn"><NavLink className="Back_link" to="/dogs">Back</NavLink></button>
                         </div>
                     </article>
                 </section>
             </div>
+
         </>
     )
-}
+};
 export default Detail;
 

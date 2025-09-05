@@ -1,8 +1,12 @@
 .footer {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     background-color: #F5F5FA;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+
+     box-shadow:  1px 1px 9px #AAAACC  inset;
+    -webkit-clip-path: inset #AAAACC inset;
+    clip-path: inset #AAAACC;
 position: fixed;
 
 bottom: 0;

@@ -2,7 +2,11 @@
 @use '../../src/components/dogpage/footerMenu';
 @use '../../src/components/dogpage/scrollbar';
 
-.dogs {
+footer{
+    padding-top: 1rem;
+}
+
+.dog {
 padding-bottom: 5rem;
     .top_container {
 

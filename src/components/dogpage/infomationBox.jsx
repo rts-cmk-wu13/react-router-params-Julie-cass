@@ -1,27 +1,63 @@
-import React from "react";
+import React,  { useEffect, useState } from "react";
 import { FiMapPin } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import vite from "../../../public/vite.svg"; // Add this import
 
-function InfomationBox() { // Capitalize the component name
-    return (
-        <>
-        <button className="information_box">
-            <NavLink to={"/detail{id}"}></NavLink>
-        <div className="dog_info_box" >
-            <div className="dog_image"><img src={vite} alt="" /></div>
-            <button className="favor_btn"><FaHeart className="icon" /></button>
-            <div className="dog_info">
-                <span className="species_info">
-                    <h3>species</h3>
-                    <p><FiMapPin className="icon map_icon" /></p>
-                </span>
-                <p>Taking care of a pet is my favorite, it helps me to...</p>
+function InfomationBox() {
+
+ const [DOGS, setDOGS] = useState(null);
+const [loading, setLoading] = useState(true);
+const API_URL = "http://localhost:4000/dogs";
+
+
+useEffect(() => {
+ fetch(API_URL)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log("Data fetched:", data);
+      setDOGS(data);
+      setLoading(false);
+    })
+    .catch(error => {
+      console.error("Fetch error:", error);
+      setLoading(false);
+    });
+},
+[]);
+console.log(DOGS)
+
+
+
+ if(loading){
+     return <p>Loading...</p>;
+     }
+
+ return(
+     <>
+     {DOGS.map(d =>(
+        <div className="information_box" key={d.id}>
+            <NavLink to={`/detail/${d.id}`}></NavLink>
+            <div className="dog_info_box" >
+                <div className="dog_image"><img src={d.image} alt="" /></div>
+               {/* <button className="favor_btn"><FaHeart className="icon" /></button> */}
+                <div className="dog_info">
+                    <span className="species_info">
+                        <h3>{d.breed}</h3>
+                        <p><FiMapPin className="icon map_icon" />{d.location}</p>
+                    </span>
+                    <p>Taking care of a pet is my favorite, it helps me to...</p>
+                </div>
             </div>
         </div>
-        </button>
-        </>
-    );
+    ))}
+    </>
+)
 }
+
 export default InfomationBox;
+      

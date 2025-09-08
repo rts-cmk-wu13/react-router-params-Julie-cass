@@ -1,0 +1,32 @@
+@use '../../src/components/dogpage/infomationBox';
+@use '../../src/components/dogpage/footerMenu';
+@use '../../src/components/dogpage/scrollbar';
+@use '../components/userINFO/user';
+
+footer{
+    padding-top: 1rem;
+}
+
+.dog {
+padding-bottom: 5rem;
+    .top_container {
+
+        display: flex;
+        justify-content: space-between;
+
+   
+    }
+
+
+
+    
+    
+}
+
+     .dog_scroll{
+        text-align: center;
+         overflow-y:hidden;
+             &::-webkit-scrollbar {
+         display: none;
+     }
+     }

@@ -1,0 +1,21 @@
+    .scrollbar_btns {
+        overflow-x: scroll;
+        margin-bottom: 1rem;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 0;
+
+        button {
+            border-radius: 3rem;
+            border: none;
+            color: #7878AB;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            background-color: #F5F5FA;
+            box-shadow: 0 8px 16px 0 #aaaaccc6;
+        }
+    }

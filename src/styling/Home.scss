@@ -1,0 +1,44 @@
+
+
+.animal-image {
+  max-width:18rem;
+padding-bottom: 2rem;
+}
+
+.titleHome {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #333;
+}
+
+.pet-app-desc {
+  text-align: center;
+  font-size: 1rem;
+line-height: 0.5em;
+  color: #828282;
+padding-bottom: 5rem;
+}
+
+.Skip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 4rem;
+.Skip_btn{
+    max-width: 18rem;
+    border-radius: 3rem;
+    border: none;
+background-color: #57419D;
+padding:0.8rem 0 0.8rem 0;
+box-shadow: 0 8px 16px 0 #AAAACC;
+
+.Skip_link{
+
+    text-decoration: none;
+    padding:0.8rem 9rem 0.8rem 8.5rem;
+    color: #fff;
+    }
+}
+}

@@ -1,0 +1,110 @@
+
+.detail {
+    background-image: url('../../assets/background.svg');
+
+    .image_box img {
+        padding-top: 5rem;
+        width: 13rem;
+        height: 13.5rem;
+
+        position: relative;
+        left: 5.5rem;
+        top: 0.2rem;
+
+    }
+}
+
+.paw_icon,
+.gender_icon {
+
+    text-align: center;
+    border-radius: 3rem;
+    padding: 0.5rem;
+        box-shadow:  13px 7px 14px  #aaaacca3;
+    margin-right: 0.5rem;
+}
+
+.species_name p,
+.gender p {
+    color: #4F4F4F;
+    font-size: 0.9rem;
+
+}
+
+.paw_icon {
+    color: #F4B207;
+}
+
+.gender_icon {
+    color: #FF8893;
+}
+
+.Back {
+
+    .content_box {
+        padding-top: 0.5rem;
+        display: block;
+        margin: 0 auto;
+
+        max-width: 18rem;
+    }
+
+    .name_place_box {
+        & h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        & p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #9E9E9E;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    .about_dog_box {
+        display: flex;
+        gap: 3rem;
+
+    }
+
+    .species_name,
+    .gender {
+        display: flex;
+        align-items: center;
+    }
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F5F5F9;
+    border-top-left-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+    padding-bottom: 2rem;
+
+
+    .detail_txt p {
+        color: #9E9E9E;
+        font-size: 0.9rem;
+    }
+
+    .Back_btn {
+        margin-top: 1rem;
+        max-width: 18rem;
+        border-radius: 3rem;
+        border: none;
+        background-color: #57419D;
+        padding: 0.8rem 0 0.8rem 0;
+        box-shadow:  13px 7px 14px  #aaaacca3;
+
+        .Back_link {
+
+            text-decoration: none;
+            padding: 0.8rem 9rem 0.8rem 8.5rem;
+            color: #fff;
+        }
+    }
+
+
+}

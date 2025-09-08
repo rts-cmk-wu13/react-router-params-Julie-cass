@@ -1,0 +1,70 @@
+.information_box {
+    border: none;
+    background-color: #F5F5FA;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    
+}
+
+.dog_link{
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+}
+
+.dog_info_box {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+
+    text-align: left;
+    max-height: 10rem;
+    max-width: 18.5rem;
+    margin: 0 auto;
+
+ 
+    border-radius: 1rem;
+    background-color: #F5F5FA;
+        box-shadow:  13px 7px 14px  #aaaaccb1;
+
+    .dog_image {
+        grid-area: 1 / 1 / 1 / 2;
+       width: 8rem;
+    
+       & img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           border-radius: 1rem 1rem 0 0;
+       }
+    }
+
+    .dog_info {
+      
+        width: 10rem;
+        grid-area: 1 / 2 / 1 / 3;
+
+        .map_icon {
+            color: #5533EA;
+        }
+
+        p{
+            font-size: 0.9rem;
+        }
+
+    }
+}
+
+.favor_btn {
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    color: #7878AB;
+    background-color: #F5F5FA;
+        box-shadow:  13px 7px 14px  #aaaaccad;
+    grid-area: 1/3/1/4;
+
+
+
+}

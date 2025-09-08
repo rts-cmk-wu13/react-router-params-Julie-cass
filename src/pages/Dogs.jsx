@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { CiBellOn } from "react-icons/ci";
-import { FaMapMarkerAlt } from "react-icons/fa";
 
 
  import FooterMenu from "../components/dogpage/footerMenu.jsx";
 import InfomationBox from "../components/dogpage/infomationBox.jsx";
 import ScrollbarButtons from "../components/dogpage/scrollbarbtn.jsx";
-
+import User from "../components/userINFO/user.jsx";
 
 import '../styling/Dogs.scss';
 import vite from '../../public/vite.svg';
@@ -17,11 +15,7 @@ function Dogs() {
         <>
        <div className="dog">
            <div className="top_container">
-               <div className="pfp_box">
-                   <img src={vite} alt="" />
-                   <p><FaMapMarkerAlt className="icon" />somewhere</p>
-               </div>
-               <button className="notifi_btn"><CiBellOn /></button>
+               <User />
            </div>
            <ScrollbarButtons />
            <div className="dog_scroll">

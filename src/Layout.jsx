@@ -2,15 +2,9 @@ import { Outlet, Link } from "react-router-dom"
 
 function Layout() {
   return (
-    <>
-
-      
-    
-      
-      <main>
+    <><main>
         <Outlet />
       </main>
-  
     </>
   )
 }

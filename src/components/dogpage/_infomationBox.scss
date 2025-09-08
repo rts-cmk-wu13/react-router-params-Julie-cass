@@ -1,8 +1,9 @@
 .information_box {
     border: none;
     background-color: #F5F5FA;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     cursor: pointer;
+    
 }
 
 .dog_link{
@@ -24,7 +25,7 @@
  
     border-radius: 1rem;
     background-color: #F5F5FA;
-    box-shadow: 0 5px 16px 5px #AAAACC;
+        box-shadow:  13px 7px 14px  #aaaaccb1;
 
     .dog_image {
         grid-area: 1 / 1 / 1 / 2;
@@ -61,7 +62,7 @@
     border: none;
     color: #7878AB;
     background-color: #F5F5FA;
-    box-shadow: 0 8px 16px 0 #AAAACC;
+        box-shadow:  13px 7px 14px  #aaaaccad;
     grid-area: 1/3/1/4;
 
 

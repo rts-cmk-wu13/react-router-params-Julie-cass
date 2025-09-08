@@ -14,7 +14,7 @@ function FooterMenu() {
                         isPending ? "pending" : isActive ? "active" : ""} to="/dogs"><CiHome /></NavLink></li>
 
                     <li className="footer_item"><NavLink className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "active" : ""} to="/detail/1"><IoChatbubbleOutline /></NavLink></li>
+                        isPending ? "pending" : isActive ? "active" : ""} to="/"><IoChatbubbleOutline /></NavLink></li>
 
                     <li className="footer_item"><NavLink className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "active" : ""} to="/"><IoPersonOutline /></NavLink></li>
@@ -27,7 +27,3 @@ function FooterMenu() {
     );
 }
 export default FooterMenu;
-
-/* className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active" : ""
-  } */

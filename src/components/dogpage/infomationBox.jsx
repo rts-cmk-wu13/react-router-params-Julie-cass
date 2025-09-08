@@ -41,7 +41,7 @@ console.log(DOGS)
      <>
      {DOGS.map(d =>(
         <div className="information_box" key={d.id}>
-            <NavLink to={`/detail/${d.id}`}></NavLink>
+            <NavLink className="dog_link" to={`/detail/${d.id}`} key={d.id}>
             <div className="dog_info_box" >
                 <div className="dog_image"><img src={d.image} alt="" /></div>
                {/* <button className="favor_btn"><FaHeart className="icon" /></button> */}
@@ -53,6 +53,7 @@ console.log(DOGS)
                     <p>Taking care of a pet is my favorite, it helps me to...</p>
                 </div>
             </div>
+            </NavLink>
         </div>
     ))}
     </>

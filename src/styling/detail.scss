@@ -3,9 +3,12 @@
 
     .image_box img {
         padding-top: 5rem;
-        width: 15rem;
-        height: 15rem;
-        margin-left: 5rem;
+        width: 13rem;
+        height: 13.5rem;
+
+        position: relative;
+        left: 5.5rem;
+        top: 0.2rem;
 
     }
 }
@@ -23,6 +26,8 @@
 .species_name p,
 .gender p {
     color: #4F4F4F;
+    font-size: 0.9rem;
+
 }
 
 .paw_icon {
@@ -46,12 +51,12 @@
     .name_place_box {
         & h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         & p {
             margin: 0;
-
+            font-size: 0.9rem;
             color: #9E9E9E;
             padding-bottom: 0.5rem;
         }
@@ -80,6 +85,7 @@
 
     .detail_txt p {
         color: #9E9E9E;
+        font-size: 0.9rem;
     }
 
     .Back_btn {
@@ -89,7 +95,7 @@
         border: none;
         background-color: #57419D;
         padding: 0.8rem 0 0.8rem 0;
-        box-shadow: 10px 8px 16px 4px #AAAACC;
+        box-shadow: 10px 6px 14px #AAAACC;
 
         .Back_link {
 
@@ -98,4 +104,6 @@
             color: #fff;
         }
     }
+
+
 }

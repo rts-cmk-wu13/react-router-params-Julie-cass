@@ -1,6 +1,7 @@
     .scrollbar_btns {
         overflow-x: scroll;
-margin-bottom: 4rem;
+        margin-bottom: 1rem;
+
         &::-webkit-scrollbar {
             display: none;
         }

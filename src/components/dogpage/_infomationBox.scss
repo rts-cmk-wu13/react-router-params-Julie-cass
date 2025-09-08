@@ -5,6 +5,12 @@
     cursor: pointer;
 }
 
+.dog_link{
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+}
+
 .dog_info_box {
     display: grid;
     grid-template-columns: repeat(3, auto);
